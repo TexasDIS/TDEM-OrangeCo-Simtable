@@ -16,7 +16,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
   .cardimage {
     width: 100px;
   }
@@ -27,7 +27,7 @@
  </script>
  <script>
     function sendData(waterlevel) {
-       console.log(waterlevel); 
+       console.log(waterlevel);
        let wl = 0;
        if (waterlevel == "LOW"){
          wl = 1;
@@ -36,25 +36,25 @@
          wl = 2;
         }
         else if  (waterlevel == "HIGH"){
-         wl = 3;   
+         wl = 3;
         }
 
         let url = 'http://pt2050dashboard-dev.tacc.utexas.edu/measurements/url_create?';
-        
+
         // Get Request to CHORDS
         (async () => {
             url = url + jQuery.param({sensor_id:"e00fce68735a72f203deec1a",
-            sensor_lat:"36.689215",
-            sensor_lon:"-108.835728",
+            sensor_lat:"30.2432180",
+            sensor_lon:"-93.8489830",
             manualwaterlevel:wl,
             email:"jpowell@tacc.utexas.edu",
             api_key:"AyXz2CyrvqKMhTjxD75i"});
-            
+
             //console.log(url);
             const res = await fetch(url);
             console.log(res);
-            })(); 
-        
+            })();
+
 
      }
 
@@ -64,10 +64,10 @@
 
 <ul class="horizontal-list">
   {% for item in include.collection %}
-     
+
     <li class="card">
         <span class="header">
-          
+
         <button type=button onclick="sendData('{{ item.title }}')">
           {% if item.imgicon %}
             <div class="container">
@@ -79,7 +79,7 @@
           {% endif %}
           </button>
 
-             
+
           {% if item.highlight %}
             <mark>{{ item.highlight }}</mark>
           {% endif %}
