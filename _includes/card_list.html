@@ -1,0 +1,98 @@
+<style>
+
+  .container {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size:160%;
+    color: black;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cardimage {
+    width: 100px;
+  }
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.5.0.js">
+ </script>
+ <script>
+    function sendData(waterlevel) {
+       console.log(waterlevel); 
+       let wl = 0;
+       if (waterlevel == "LOW"){
+         wl = 1;
+        }
+        else if  (waterlevel == "MID"){
+         wl = 2;
+        }
+        else if  (waterlevel == "HIGH"){
+         wl = 3;   
+        }
+
+        let url = 'http://pt2050dashboard-dev.tacc.utexas.edu/measurements/url_create?';
+        
+        // Get Request to CHORDS
+        (async () => {
+            url = url + jQuery.param({sensor_id:"e00fce68735a72f203deec1a",
+            sensor_lat:"36.689215",
+            sensor_lon:"-108.835728",
+            manualwaterlevel:wl,
+            email:"jpowell@tacc.utexas.edu",
+            api_key:"AyXz2CyrvqKMhTjxD75i"});
+            
+            //console.log(url);
+            const res = await fetch(url);
+            console.log(res);
+            })(); 
+        
+
+     }
+
+
+
+</script>
+
+<ul class="horizontal-list">
+  {% for item in include.collection %}
+     
+    <li class="card">
+        <span class="header">
+          
+        <button type=button onclick="sendData('{{ item.title }}')">
+          {% if item.imgicon %}
+            <div class="container">
+              <img class="cardimage" src="{{ item.imgicon }}" alt="image icon">
+              <div class="centered"> {{ item.title }} </div>
+            </div>
+          {% else %}
+            <strong> {{ item.title }} </strong>
+          {% endif %}
+          </button>
+
+             
+          {% if item.highlight %}
+            <mark>{{ item.highlight }}</mark>
+          {% endif %}
+
+        </span>
+
+        <hr />
+
+        {% if item.desc != false %}
+        <p class="body">
+          {{ item.desc }}
+        </p>
+        {% endif %}
+      </a>
+    </li>
+
+  {% endfor %}
+</ul>
