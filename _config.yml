@@ -1,7 +1,7 @@
 title: TDIS - Orange County
 author: Je'aime Powell
-#url: https://texasdis.github.io/TDEM-OrangeCo-Simtable
-url: ''
+url: https://texasdis.github.io/TDEM-OrangeCo-Simtable
+#url: ''
 description: > # description of the site (multiple lines allowed)
   The purpose of this repository is to host the code that directs information CHORDS for viewing on the Simtable
 permalink: /:slug
