@@ -30,16 +30,16 @@
        console.log(waterlevel);
        let wl = 0;
        if (waterlevel == "LOW"){
-         wl = 1;
+         wl = .01;
         }
         else if  (waterlevel == "MID"){
-         wl = 2;
+         wl = .5;
         }
         else if  (waterlevel == "HIGH"){
          wl = 3;
         }
 
-        let url = 'http://pt2050dashboard-dev.tacc.utexas.edu/measurements/url_create?';
+        let url = 'https://pt2050dashboard-dev.tacc.utexas.edu/measurements/url_create?';
 
         // Get Request to CHORDS
         (async () => {
