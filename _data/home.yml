@@ -25,8 +25,7 @@ project_entries:
     sensorLon: "-93.8489830"
     waterLevel: "1"
 
-
- - title: Sensor OD04-1m
+  - title: Sensor OD04-1m
     url: https://setexasrain.onerain.com/sensor/?site_id=327&site=f6929e64-4f56-41e2-a147-b0444da7ea1b&device_id=5&device=b389b733-dbdc-4a38-be76-b674205fd373
     desc: SE Texas R.A.I.N. Sensor Location
     imgicon: images/floodicon-mid.png
@@ -53,7 +52,7 @@ project_entries:
     sensorLon: "-94.114346"
     waterLevel: "6.4"
 
- - title: "Hurricane Harvey - Pine St"
+  - title: "Hurricane Harvey - Pine St"
     url: overview-post
     desc: 21ft level reading at the Salt Water Barrier
     #imgicon: images/SETX-RAIN.png
