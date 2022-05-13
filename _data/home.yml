@@ -9,15 +9,21 @@ navbar_entries:
     url: https://www.abhinav.co
 
 project_entries:
-  - title: LOW
+  - title: OD01 LOW Water
     url: https://pt2050dashboard-dev.tacc.utexas.edu/measurements/url_create?sensor_id="e00fce68735a72f203deec1a"&data_calc=0&data_raw=0&sensor_lat="36.689215"&sensor_lon="-108.835728"&manualwaterlevel=0&email="jpowell@tacc.utexas.edu"&api_key="AyXz2CyrvqKMhTjxD75i"
     desc: Projects are shown in card layout
     imgicon: images/floodicon-low.png
+    sensorLat: "30.2432180"
+    sensorLon: "-93.8489830"
+    waterLevel: "0"
 
-  - title: MID
+  - title: Sensor OD01-1m
     url: overview-post
     desc: You can control visibility from _config.yml file
     imgicon: images/floodicon-mid.png
+    sensorLat: "30.2432180"
+    sensorLon: "-93.8489830"
+    waterLevel: "1"
 
   - title: HIGH
     url: overview-post
