@@ -34,9 +34,9 @@ project_entries:
     url: overview-post
     desc: 21ft level reading at the Salt Water Barrier
     #imgicon: images/SETX-RAIN.png
-    sensor_lat: "30.156878"
-    sensor_lon: "-94.114346"
-    water_level: "6.4"
+    sensorLat: "30.156878"
+    sensorLon: "-94.114346"
+    waterLevel: "6.4"
 
 old_project_entries:
   - title: Soopr
