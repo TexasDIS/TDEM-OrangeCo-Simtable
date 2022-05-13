@@ -26,9 +26,12 @@
 <script src="https://code.jquery.com/jquery-3.5.0.js">
  </script>
  <script>
-    function sendData(waterlevel) {
-       console.log(waterlevel);
-       let wl = 0;
+    function sendData(slat , slon, wl) {
+       console.log(wl);
+      
+       
+       /*
+        let wl = 0;
        if (waterlevel == "LOW"){
          wl = 1;
         }
@@ -38,14 +41,15 @@
         else if  (waterlevel == "HIGH"){
          wl = 6.4;
         }
+        */
 
         let url = 'https://pt2050dashboard-dev.tacc.utexas.edu/measurements/url_create?';
 
         // Get Request to CHORDS
         (async () => {
             url = url + jQuery.param({sensor_id:"e00fce68735a72f203deec1a",
-            sensor_lat:"30.156878", //"30.2432180",
-            sensor_lon: "-94.114346", //"-93.8489830",
+            sensor_lat:slat, //"30.156878", "30.2432180",
+            sensor_lon:slon, //"-94.114346", "-93.8489830",
             manualwaterlevel:wl,
             email:"jpowell@tacc.utexas.edu",
             api_key:"AyXz2CyrvqKMhTjxD75i"});
@@ -68,7 +72,7 @@
     <li class="card">
         <span class="header">
 
-        <button type=button onclick="sendData('{{ item.title }}')">
+        <button type=button onclick="sendData('{{ item.sensor_lat, item.sensor_lon, item.water_level }}')">
           {% if item.imgicon %}
             <div class="container">
               <img class="cardimage" src="{{ item.imgicon }}" alt="image icon">
