@@ -38,6 +38,14 @@ project_entries:
     sensorLon: "-94.114346"
     waterLevel: "6.4"
 
+ - title: "Hurricane Harvey - Pine St."
+    url: overview-post
+    desc: 21ft level reading at the Salt Water Barrier
+    #imgicon: images/SETX-RAIN.png
+    sensorLat: "30.133056"
+    sensorLon: "-94.096389"
+    waterLevel: "6.096"
+
 old_project_entries:
   - title: Soopr
     url: https://www.soopr.co
