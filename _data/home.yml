@@ -15,15 +15,15 @@ project_entries:
     imgicon: images/floodicon-mid.png
     sensorLat: "30.2432180"
     sensorLon: "-93.8489830"
-    waterLevel: "6.096"
+    waterLevel: "6.4"
 
-  - title: OD01 20ft
+  - title: OD01 25ft
     url: https://setexasrain.onerain.com/site/?site_id=266&site=06e35c31-fc79-469d-be34-72a5954037f5
     desc: You can control visibility from _config.yml file
     imgicon: images/floodicon-high.png
     sensorLat: "30.2432180"
     sensorLon: "-93.8489830"
-    waterLevel: "6.4"
+    waterLevel: "7.62"
 
   - title: OD04 1m
     url: https://setexasrain.onerain.com/sensor/?site_id=327&site=f6929e64-4f56-41e2-a147-b0444da7ea1b&device_id=5&device=b389b733-dbdc-4a38-be76-b674205fd373
