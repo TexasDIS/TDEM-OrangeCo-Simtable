@@ -25,21 +25,29 @@ project_entries:
     sensorLon: "-93.8489830"
     waterLevel: "8.06"
 
-  - title: OD03 1m
+  - title: OD03 3.27ft
     url: https://setexasrain.onerain.com/sensor/?site_id=327&site=f6929e64-4f56-41e2-a147-b0444da7ea1b&device_id=5&device=b389b733-dbdc-4a38-be76-b674205fd373
     desc: Bridge City 
     imgicon: images/floodicon-mid.png
     sensorLat: "30.029857"
     sensorLon: "-93.857355"
-    waterLevel: "1"
+    waterLevel: "1.05"
 
-  - title: OD04 1m
+  - title: OD04 20.5ft
     url: https://setexasrain.onerain.com/sensor/?site_id=327&site=f6929e64-4f56-41e2-a147-b0444da7ea1b&device_id=5&device=b389b733-dbdc-4a38-be76-b674205fd373
     desc: Upper Vidor
     imgicon: images/floodicon-mid.png
     sensorLat: "30.156900"
     sensorLon: "-94.036800"
-    waterLevel: "1"
+    waterLevel: "6.6"
+
+ - title: OD05 10.6ft
+    url: https://setexasrain.onerain.com/sensor/?site_id=327&site=f6929e64-4f56-41e2-a147-b0444da7ea1b&device_id=5&device=b389b733-dbdc-4a38-be76-b674205fd373
+    desc: Lower Vidor
+    imgicon: images/floodicon-mid.png
+    sensorLat: "30.10450705"
+    sensorLon: "-94.01064909"
+    waterLevel: "3.42"
 
   - title: "Salt Water Barrier 21ft"
     url: overview-post
