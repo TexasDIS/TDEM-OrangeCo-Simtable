@@ -26,10 +26,9 @@
 <script src="https://code.jquery.com/jquery-3.5.0.js">
  </script>
  <script>
-    function sendData( data ) {
-      console.log(data[0]);
-      console.log(data[1]); 
-      console.log(data[2]);
+    function sendData( slat, slon, wl ) {
+      console.log( slat, slon, wl );
+      
       
        
        /*
@@ -74,7 +73,7 @@
     <li class="card">
         <span class="header">
 
-        <button type=button onclick="sendData('{{ item.sensorLat }}, {{ item.sensorLon}} , {{ item.waterLevel }}')">
+        <button type=button onclick="sendData('{{ item.sensorLat }}', '{{ item.sensorLon}}' , '{{ item.waterLevel }}')">
           {% if item.imgicon %}
             <div class="container">
               <img class="cardimage" src="{{ item.imgicon }}" alt="image icon">
