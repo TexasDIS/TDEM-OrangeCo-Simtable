@@ -9,21 +9,21 @@ navbar_entries:
     url: https://www.abhinav.co
 
 project_entries:
-  - title: OD01 LOW
+  - title: OD01 21ft
     url: https://setexasrain.onerain.com/site/?site_id=266&site=06e35c31-fc79-469d-be34-72a5954037f5
     desc: Projects are shown in card layout
-    imgicon: images/floodicon-low.png
-    sensorLat: "30.2432180"
-    sensorLon: "-93.8489830"
-    waterLevel: "0"
-
-  - title: OD01 1m
-    url: https://setexasrain.onerain.com/site/?site_id=266&site=06e35c31-fc79-469d-be34-72a5954037f5
-    desc: You can control visibility from _config.yml file
     imgicon: images/floodicon-mid.png
     sensorLat: "30.2432180"
     sensorLon: "-93.8489830"
-    waterLevel: "1"
+    waterLevel: "6.096"
+
+  - title: OD01 20ft
+    url: https://setexasrain.onerain.com/site/?site_id=266&site=06e35c31-fc79-469d-be34-72a5954037f5
+    desc: You can control visibility from _config.yml file
+    imgicon: images/floodicon-high.png
+    sensorLat: "30.2432180"
+    sensorLon: "-93.8489830"
+    waterLevel: "6.4"
 
   - title: OD04 1m
     url: https://setexasrain.onerain.com/sensor/?site_id=327&site=f6929e64-4f56-41e2-a147-b0444da7ea1b&device_id=5&device=b389b733-dbdc-4a38-be76-b674205fd373
@@ -33,7 +33,7 @@ project_entries:
     sensorLon: "-94.0368000"
     waterLevel: "1"
 
-  - title: "Hurricane Harvey - Salt Water Barrier"
+  - title: "Salt Water Barrier 21ft"
     url: overview-post
     desc: 21ft level reading at the Salt Water Barrier
     imgicon: images/Harvey.png
@@ -41,9 +41,9 @@ project_entries:
     sensorLon: "-94.114346"
     waterLevel: "6.4"
 
-  - title: "Hurricane Harvey - Pine St"
+  - title: "Pine St 20ft"
     url: overview-post
-    desc: 21ft level reading at the Salt Water Barrier
+    desc: 20ft level reading at Pine St.
     imgicon: images/Harvey.png
     sensorLat: "30.133056"
     sensorLon: "-94.096389"
