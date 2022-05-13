@@ -9,7 +9,7 @@ navbar_entries:
     url: https://www.abhinav.co
 
 project_entries:
-  - title: OD01 LOW Water
+  - title: OD01 LOW
     url: https://setexasrain.onerain.com/site/?site_id=266&site=06e35c31-fc79-469d-be34-72a5954037f5
     desc: Projects are shown in card layout
     imgicon: images/floodicon-low.png
@@ -17,7 +17,7 @@ project_entries:
     sensorLon: "-93.8489830"
     waterLevel: "0"
 
-  - title: Sensor OD01-1m
+  - title: OD01 1m
     url: https://setexasrain.onerain.com/site/?site_id=266&site=06e35c31-fc79-469d-be34-72a5954037f5
     desc: You can control visibility from _config.yml file
     imgicon: images/floodicon-mid.png
@@ -25,7 +25,7 @@ project_entries:
     sensorLon: "-93.8489830"
     waterLevel: "1"
 
-  - title: Sensor OD04-1m
+  - title: OD04 1m
     url: https://setexasrain.onerain.com/sensor/?site_id=327&site=f6929e64-4f56-41e2-a147-b0444da7ea1b&device_id=5&device=b389b733-dbdc-4a38-be76-b674205fd373
     desc: SE Texas R.A.I.N. Sensor Location
     imgicon: images/floodicon-mid.png
@@ -33,21 +33,10 @@ project_entries:
     sensorLon: "-94.0368000"
     waterLevel: "1"
 
-  - title: HIGH
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    imgicon: images/floodicon-high.png
-    #highlight: WIP
-
-  - title: CURRENT
-    url: overview-post
-    desc: This is an example project, configured in _data/home.yml
-    #imgicon: images/SETX-RAIN.png
-
   - title: "Hurricane Harvey - Salt Water Barrier"
     url: overview-post
     desc: 21ft level reading at the Salt Water Barrier
-    #imgicon: images/SETX-RAIN.png
+    imgicon: images/Harvey.png
     sensorLat: "30.156878"
     sensorLon: "-94.114346"
     waterLevel: "6.4"
@@ -55,7 +44,7 @@ project_entries:
   - title: "Hurricane Harvey - Pine St"
     url: overview-post
     desc: 21ft level reading at the Salt Water Barrier
-    #imgicon: images/SETX-RAIN.png
+    imgicon: images/Harvey.png
     sensorLat: "30.133056"
     sensorLon: "-94.096389"
     waterLevel: "6.096"
